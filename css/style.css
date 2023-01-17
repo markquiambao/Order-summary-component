@@ -5,7 +5,7 @@
   font-family: var(--font);
 }
 body {
-  background-image: url(https://emiratesgroup-my.sharepoint.com/:u:/r/personal/mark_quiambao_dnata_com/Documents/Desktop/QC/1og/3/img/pattern-background-desktop.svg);
+  background-image: url(../img/pattern-background-desktop.svg);
 }
 :root {
   /*Primary*/
@@ -174,4 +174,30 @@ button {
 .flex-container li:hover:nth-child(2){
   color:var(--Btn);
   cursor: pointer;
+  text-decoration: underline;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.footer h1 {
+  font-size: 15px;
+  margin: 10px;
+  color: var(--Desaturated-blue);
+}
+
+.footer span:hover {
+  color: var(--Btn);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1440px) and (min-width:429px) {
+  .card {
+    width:90%;
+    height: 80vh;
+  }
 }
