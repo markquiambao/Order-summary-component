@@ -1,0 +1,177 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing:border-box;
+  font-family: var(--font);
+}
+body {
+  background-image: url(https://emiratesgroup-my.sharepoint.com/:u:/r/personal/mark_quiambao_dnata_com/Documents/Desktop/QC/1og/3/img/pattern-background-desktop.svg);
+}
+:root {
+  /*Primary*/
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Btn:hsl(228, 100%, 79%);
+/*Neutral*/
+  
+  --Very-pale-blue: hsl(225, 100%, 98%);
+
+  --Desaturated-blue: hsl(224, 23%, 55%);
+
+  --Dark-blue: hsl(223, 47%, 23%);
+  --font: Red Hat Display;
+
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  height: 100vh;
+}
+.card {
+  display: flex;
+  width: 20%;
+  height: 70vh;
+  border: 2px solid black;
+  top: 50%;
+  border-radius: 15px;
+  flex-direction: column;
+  background-color: var(--Very-pale-blue);
+  border:none;
+}
+
+.image-container{
+  display: flex;
+  height: 200px;
+  
+}
+
+.image-container img {
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.info {
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content:center;
+}
+
+.info p {
+  font-size: 15px;
+  color: var(--Desaturated-blue);
+  margin: 25px;
+  letter-spacing: .5px;
+  text-align: center;
+}
+
+.info h1{
+  margin: 25px 10px 0px 0px;
+  font-weight: 900;
+}
+
+.info-plan {
+  display:flex;
+  margin:25px;
+  
+}
+.info-desc {
+  display:flex;
+  margin-left: 15px;
+}
+
+
+.info-plan img {
+  width: 50px;
+  height:50px;
+  vertical-align: middle;
+  margin-top: 10px;
+}
+.change {
+  display:flex;
+  align-items:flex-end;
+ justify-content:center;
+ 
+}
+
+.flex-end { 
+  -webkit-align-items: flex-end; 
+  align-items: flex-end; 
+}
+
+.center { 
+  -webkit-align-items: center; 
+  align-items: center; 
+}  
+
+.flex-item {
+  padding: 5px;
+  width: 0 auto;
+  margin: 5px;
+  line-height: 25px;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+
+.flex-container {
+  list-style: none;
+  display: flex;
+  float: left;
+}
+.flex-container li:nth-child(1){
+  padding-right: 55px;
+}
+.flex-container li:nth-child(2){
+    font-size: 13px;
+    color: var(--Desaturated-blue);
+}
+
+.flex-item p {
+  color: var(--Desaturated-blue);
+}
+
+.payment {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction:column;
+}
+button {
+  margin: 10px;
+  height: 40px;
+  width: 100%;
+  border-radius: 10px;
+  border:none;
+  cursor:pointer;
+  font-weight:900;
+}
+
+.btn-pay, .btn-can {
+  width: 70%;
+}
+
+.btn-pay {
+  background-color: var(--Bright-blue);
+  color: var(--Very-pale-blue);
+}
+
+.btn-can {
+  background-color: var(--Very-pale-blue);
+}
+
+.btn-pay:hover{
+  background-color: var(--Btn);
+}
+
+
+.btn-can:hover{
+  color: var(--Desaturated-blue);
+}
+
+.flex-container li:hover:nth-child(2){
+  color:var(--Btn);
+  cursor: pointer;
+}
